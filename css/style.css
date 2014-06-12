@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(../fonts/pacifico.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/lato.woff) format('woff');
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Lato", "Helvetica Neue", "Arial", serif, sans-serif;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: right top;
+    color: #666666;
+    margin-bottom: 60px;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.player-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#player {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px;
+}
+
+.progress {
+    margin-bottom: 10px;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.controll-wrapper {
+    text-align: center;
+}
+
+.controll-wrapper span {
+    padding: 5px;
+}
+
+.album-art {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.album-art img.art-image {
+    width: 250px;
+    border-radius: 20px;
+    margin-right: 50px; /*diseuaikan dengan ukuran logo*/
+}
+
+.album-art img.logo {
+    width: 50px;
+    vertical-align: top;
+    float: left;
+    opacity: 0.75;
+}
+
+.slider.slider-horizontal .slider-track {
+    margin-top: -11px;
+    border-radius: 10px;
+}
+
+.slider-selection {
+    background-color: #666666;
+    background-image: none;
+    border-radius: 10px;
+}
+
+.slider.slider-horizontal {
+    margin-left: 20px;
+}
+
+.volume-percentage {
+    position: relative;
+    top: -6px;
+}
+
+.slider-handle {
+    background-color: #F3F4F8;
+    background-image: none;
+    opacity: 1;
+}
+
+.player-information {
+    text-align: center;
+}
+
+.howl {
+    float: left;
+    margin-left: -2px;
+    font-family: 'Pacifico';
+    font-size: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+.container .text-muted {
+    font-family: 'Pacifico';
+    margin: 20px 0;
+}
